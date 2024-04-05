@@ -1,9 +1,12 @@
+import { LuSendHorizonal } from "react-icons/lu";
+
 function Contact() {
+  
   return (
     <div className="h-[90vh] w-full flex justify-center md:items-center mt-28 md:mt-0 p-2 md:p-0">
-      <div className="bg-white p-8 rounded w-full md:w-1/2 shadow-lg">
+      <div className="bg-white p-8 rounded w-full md:w-1/2 md:shadow-lg">
         <h2 className="text-3xl md:text-4xl text-yellow-400 font-bold mb-4">Contact Us</h2>
-        <form>
+        <form action="/" onSubmit={() => alert('Thank You For Connecting With Us! 🎉🎉🎉')}>
           <div className="mb-4">
             <input
               type="text"
@@ -33,9 +36,9 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="bg-yellow-400 px-4 py-2 rounded-md hover:bg-yellow-500 hover:scale-110 transition-all"
+            className="flex justify-center items-center gap-2 bg-yellow-400 px-4 md:px-6 py-2 md:py-3 rounded-md text-lg md:text-xl hover:bg-yellow-500 hover:scale-110 transition-all"
           >
-            Send Message
+            Send Message <LuSendHorizonal />
           </button>
         </form>
       </div>

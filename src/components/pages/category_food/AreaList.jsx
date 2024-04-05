@@ -6,6 +6,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { setArea } from "../../slices/mealSlice";
 
+
 const AreaList = () => {
   const [selectArea, setSelectArea] = useState("");
   const dispatch = useDispatch();
