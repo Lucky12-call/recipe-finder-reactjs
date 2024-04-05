@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { animateBox } from "../pages/animation/animation";
+import { animateBox } from "../animation/animation";
 import { Link } from "react-router-dom";
 
 const Home = () => {

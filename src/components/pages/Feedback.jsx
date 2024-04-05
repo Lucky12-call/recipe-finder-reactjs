@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useRef } from "react";
-import { animateBox } from "./animation/animation";
+import { animateBox } from "../animation/animation";
 
 const Feedback = () => {
   const feedback = useRef();
