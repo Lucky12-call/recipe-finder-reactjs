@@ -14,7 +14,7 @@ const FilterByIngredient = () => {
   const { data, refetch, isRefetching } = useQuery({
     queryKey: ["filterByMainIngredient"],
     queryFn: async () => {
-      const { data } = await (mainIngredient &&
+      const { data } = await (
         axios.get(filterByMainIngredient(mainIngredient)));
       return data.meals;
     },

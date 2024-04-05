@@ -14,7 +14,7 @@ const FilterByArea = () => {
   const { data, refetch, isRefetching } = useQuery({
     queryKey: ["filterByArea"],
     queryFn: async () => {
-      const { data } = await (areaName && axios.get(filterByArea(areaName)));
+      const { data } = await (axios.get(filterByArea(areaName)));
       return data.meals;
     },
   });
