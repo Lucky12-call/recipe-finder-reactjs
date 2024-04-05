@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { animateBox } from "./animation/animation";
 
-// letter arrry
+// letter array
 const alphabets = [
   "A",
   "B",
@@ -47,7 +47,7 @@ const Letter = () => {
   return (
     <div ref={letter} className="mt-20 md:mt-40">
       <h1 className="flex gap-2 md:gap-4 justify-center items-center text-3xl md:text-4xl text-center font-semibold text-yellow-500 mt-5 md:mt-10 ">
-        SEARCH BY FIRST LETTER <TbListLetters className="text-yellow-400" />
+        SEARCH BY LETTER <TbListLetters className="text-yellow-400" />
       </h1>
       <div className="flex flex-wrap gap-2 justify-center my-20">
         {alphabets.map((letter, i) => (

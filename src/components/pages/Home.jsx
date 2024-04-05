@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { animateBox } from "../pages/animation/animation";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const home = useRef();
@@ -25,9 +26,11 @@ const Home = () => {
           Make Your <br /> <span className="text-yellow-400">Dream Food</span>
           <br /> With Us
         </h1>
-        <button className=" flex gap-3 items-center justify-center bg-yellow-400 hover:bg-yellow-500 px-4 md:px-6 py-2 md:py-3 mt-10 md:text-xl rounded-md hover:scale-110 transition-all">
-          Get Started <FaArrowRightLong />{" "}
-        </button>
+        <Link to={'/contact'}>
+          <button className="flex gap-3 items-center justify-center bg-yellow-400 hover:bg-yellow-500 px-4 md:px-6 py-2 md:py-3 mt-10 md:text-xl rounded-md hover:scale-110 transition-all">
+            Get Started <FaArrowRightLong />{" "}
+          </button>
+        </Link>
       </div>
       <div>
         <img
