@@ -30,7 +30,7 @@ const AreaList = () => {
           <input
             type="text"
             value={selectArea}
-            onChange={(e) => setSelectArea(e.target.value)}
+            onChange={(e) => setSelectArea(e.target.value.toLowerCase())}
             placeholder="Enter area..."
             className="w-full px-4 py-1 md:py-2 focus:outline-none"
           />

@@ -30,7 +30,7 @@ const IngredientList = () => {
           <input
             type="text"
             value={selectIngredient}
-            onChange={(e) => setSelectIngredient(e.target.value)}
+            onChange={(e) => setSelectIngredient(e.target.value.toLowerCase())}
             placeholder="Enter main ingredient..."
             className="w-full px-4 py-1 md:py-2 focus:outline-none"
           />
