@@ -2,6 +2,7 @@ import { LuSendHorizonal } from "react-icons/lu";
 
 function Contact() {
   
+  
   return (
     <div className="h-[90vh] w-full flex justify-center md:items-center mt-28 md:mt-0 p-2 md:p-0">
       <div className="bg-white p-8 rounded w-full md:w-1/2 md:shadow-lg">
