@@ -50,7 +50,7 @@ const FilterByArea = () => {
             <div
               key={byArea.idMeal}
               onClick={() => handleClick(byArea.idMeal)}
-              className="h-60 w-48 rounded-lg shadow-lg p-2  hover:scale-110 transition-transform cursor-pointer"
+              className="h-64 w-40 md:w-48 rounded-lg shadow-lg p-2  hover:scale-110 transition-transform cursor-pointer"
             >
               <img
                 src={byArea.strMealThumb}

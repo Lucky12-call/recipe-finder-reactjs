@@ -30,7 +30,7 @@ const SearchByLetter = () => {
     <div className="p-2 md:p-0 min-h-screen mt-20 md:mt-28">
       <div className="h-24 w-full flex flex-col md:flex-row justify-between items-center md:px-10 md:shadow-lg">
         <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400 ">
-          SEARCH IN LETTER
+        SEARCH BY FIRST LETTER
         </h1>
         {/* search field  */}
         <div className="w-full md:w-96 flex items-center border-2 border-slate-400 rounded-md">
@@ -44,11 +44,6 @@ const SearchByLetter = () => {
           <IoSearch size={23} className="mr-2" />
         </div>
       </div>
-
-      <h1 className="text-3xl md:text-4xl text-center font-semibold text-yellow-400 mb-10 md:mb-20 mt-10">
-        SEARCH BY FIRST LETTER
-      </h1>
-
       <div
         className={`h-full w-full ${
           isRefetching ? "flex justify-center" : "grid grid-cols-2"
@@ -67,7 +62,7 @@ const SearchByLetter = () => {
                 <div
                   key={byLetter.idMeal}
                   onClick={() => handleClick(byLetter.idMeal)}
-                  className="h-60 w-48 rounded-lg shadow-lg p-2  hover:scale-110 transition-transform cursor-pointer"
+                  className="h-64 w-40 md:w-48 rounded-lg shadow-lg p-2  hover:scale-110 transition-transform cursor-pointer"
                 >
                   <img
                     src={byLetter.strMealThumb}
@@ -83,7 +78,7 @@ const SearchByLetter = () => {
               <div
                 key={byLetter.idMeal}
                 onClick={() => handleClick(byLetter.idMeal)}
-                className="h-60 w-48 rounded-lg shadow-lg p-2  hover:scale-110 transition-transform cursor-pointer"
+                className="h-64 w-40 md:w-48 rounded-lg shadow-lg p-2  hover:scale-110 transition-transform cursor-pointer"
               >
                 <img
                   src={byLetter.strMealThumb}

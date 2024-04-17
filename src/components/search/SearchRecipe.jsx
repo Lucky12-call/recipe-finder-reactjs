@@ -32,7 +32,7 @@ const SearchRecipe = ({ search, setSearch }) => {
           <div
             key={meal.idMeal}
             onClick={() => handleClick(meal.idMeal)}
-            className="h-48 w-40 rounded-lg shadow-xl p-2 hover:scale-110 transition-transform cursor-pointer"
+            className="h-64 w-40 md:w-48 rounded-lg shadow-xl p-2 hover:scale-110 transition-transform cursor-pointer"
           >
             <img
               src={meal.strMealThumb}
